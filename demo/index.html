@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="generator" content="SciTE">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/animatedList.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var animatedList_instance = animatedList('.animated_list');
+            var animatedList_instance = animatedList('.animated_list2');
+        });
+    </script>
+    <style>
+        ul li{list-style-type: circle;}
+        .selected {font-weight: bold;}
+        .selected ul{font-weight: normal;}
+        .has_children {list-style-type: disc; cursor: pointer;}
+        .has_children ul{cursor: auto;}
+    </style>
+    <title>animatedList demo</title>
+</head>
+<body>
+
+    <h1>Instance 1</h1>
+    <ul class="animated_list">
+        <li>item 1 without children</li>
+        <li>item 2 with children
+            <ul>
+                <li>subitem 1 with children
+                    <ul>
+                        <li>subsubitem 1</li>
+                        <li>subsubitem 2</li>
+                    </ul>
+                </li>
+                <li>subitem 2</li>
+                <li>subitem 3 with children
+                    <ul>
+                        <li>subsubitem 3</li>
+                        <li>subsubitem 4</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>item 3 with children
+            <ul>
+                <li>subitem 4 with children
+                    <ul>
+                        <li>subsubitem 5</li>
+                        <li>subsubitem 6</li>
+                    </ul>
+                </li>
+                <li>subitem 5</li>
+            </ul>
+        </li>
+        <li>item 4 without children</li>
+        <li>item 5 without children</li>
+        <li>item 6 with children
+            <ul>
+                <li>subitem 6</li>
+                <li>subitem 7</li>
+                <li>subitem 8</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>Instance 2</h1>
+    <ul class="animated_list2">
+        <li>item 1 without children</li>
+        <li>item 2 with children
+            <ul>
+                <li>subitem 1 with children
+                    <ul>
+                        <li>subsubitem 1</li>
+                        <li>subsubitem 2</li>
+                    </ul>
+                </li>
+                <li>subitem 2</li>
+                <li>subitem 3 with children
+                    <ul>
+                        <li>subsubitem 3</li>
+                        <li>subsubitem 4</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>item 3 with children
+            <ul>
+                <li>subitem 4 with children
+                    <ul>
+                        <li>subsubitem 5</li>
+                        <li>subsubitem 6</li>
+                    </ul>
+                </li>
+                <li>subitem 5</li>
+            </ul>
+        </li>
+    </ul>
+
+
+</body>
+</html>
